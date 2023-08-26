@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expences Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <script src="app.js"></script>
+</head>
+<body>
+    <div style="margin-top: -10px;margin-left: -10px;">
+    <div class="root" id="mdiv" >
+        <div class="container">
+        <h1 style="color: aliceblue; text-align: center;">  Expences Tracker </h1></div><br>
+        <p style="font-size: xx-large; text-align: center;">Current Balance</p>
+        <div style="margin-left: 8%; margin-right: 8%;"><hr></div>
+        <!-- <div class="input1div" ><input class="inp1"  type="text" placeholder="$0" disabled ></div> -->
+        <div class="input-group">
+       <!-- <span class="input-group-text">With textarea</span> -->
+  <textarea id="textaria" style="margin-left: 25px ; text-align: center; color: #3982f0; margin-right: 25px ; background-color:  #dbdddf;" placeholder="$0" class="form-control" aria-label="With textarea" disabled></textarea>
+</div>
+               <div class="input2div">
+                           <div style="text-align: center;  border-right: 1px solid black; box-shadow: 2px black; ">
+                            &nbsp;&nbsp;&nbsp;
+                            Income <input style="border-style: none; text-align: center;background-color: white; color: rgb(108, 215, 1);height: 40px;font-size: 1.5rem;width: 95%;" type="text" placeholder="$0" disabled> &nbsp;</div>
+                           <div style="text-align: center;">
+                            &nbsp;&nbsp;&nbsp;
+                            Expences <input style="border-style: none;text-align: center;background-color: white; color: rgb(255, 96, 96);height: 40px;font-size: 1.5rem;width: 95%;" type="text"placeholder="$0" disabled> </div>
+               </div>
+                  <br>
+                 <br>
+                   <p style="font-size: x-large; text-align: center;">Transaction History</p>
+
+<hr>
+
+<p style="font-size: x-large; text-align: center;">Enter New Transaction</p>
+<hr>
+<div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label"> <b style="font-size: larger;">Description</b> </label><br>
+    <input type="text" class="form-control" style="height: 50px;" id="formGroupExampleInput" placeholder="Enter Description">
+
+   
+  </div>
+ 
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label"><b style="font-size: larger; ">Enter Ammount</b> </label><br>
+    <input type="text" class="form-control" style="height: 50px;" id="formGroupExampleInput" placeholder="Example Ammount">
+      </div><br>
+      <h5 style="text-align: center;">(Add Income As +ve and Expense As -ve)</h5><br>
+      
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" style="padding-top:10px;padding-bottom:10px;margin-left: 25px;margin-right: 25px;" type="button">  Add Transaction</button> <br>
+      </div>
+
+    </div>
+
+    
+   
+</body>
+  
+</html>
